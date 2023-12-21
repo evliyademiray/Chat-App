@@ -1,0 +1,29 @@
+import { useState } from "react";
+import AuthPage from "./pages/AuthPage";
+import Roompage from "./pages/RoomPage";
+import ChatPage from "./pages/ChatPage";
+
+const App = () => {
+  const [isAuth, setIsAuth] = useState(localStorage.getItem("TOKEN"));
+  const [room, setRoom] = useState(null);
+
+  //yetkisi yoksa giriş sayfası
+  if (!isAuth) {
+    return <AuthPage setIsAuth={setIsAuth} />;
+  }
+
+  //Yetkisi varsa:
+  return (
+    <div className="container">
+      {room ? (
+        //Oda seçiliyse > sohbet sayfası
+        <ChatPage room={room} setRoom={setRoom} />
+      ) : (
+        //Oda seçili değilse > oda seçme sayfası
+        <Roompage setIsAuth={setIsAuth} setRoom={setRoom} />
+      )}
+    </div>
+  );
+};
+
+export default App;
