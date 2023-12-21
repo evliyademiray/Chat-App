@@ -1,9 +1,17 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 # Chat-App
+This is Web-Chat-App project created by Firebase and React.
+
+-This site live on https://evliya-chat-app.netlify.app/ link.
+
+-Used Firebase to create db of messages, rooms and users.
+
+-Be able to send message to room participants.
+
+-Used Netlify to build on web https://www.netlify.com/
+
+-Also used Scss for styling.
+
+-Be Able to sign in with mail.
+
+-Have Authorisation, Room and Chat Pages,
+
